@@ -1,5 +1,5 @@
 @import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
-//$gutter: 0em;
+$gutter: 0em;
 @import 'bower_components/neat/app/assets/stylesheets/neat';
 
 
@@ -18,6 +18,27 @@ $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
 body {
+
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
+}
+
+.header {
+
+  @include span-columns(12);
+}
+
+.login {
+  text-align: center;
+  @include span-columns(6);
+}
+
+.view {
+    text-align: center;
+    @include span-columns(6);
+}
+
+.footer {
+  @include span-columns(12);
+}
