@@ -18,14 +18,16 @@ $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
 body {
-
+  
   font-family: $base-font-family;
-  background-color: $base-background-color;
-  color: $base-font-color;
+  background-color: #555555;
+  color: $very-light-gray;
 }
 
 .header {
-
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #666666;
   @include span-columns(12);
 }
 
@@ -40,5 +42,12 @@ body {
 }
 
 .footer {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #666666;
   @include span-columns(12);
+}
+
+.blogPosts {
+  list-style: none;
 }
