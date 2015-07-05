@@ -6,7 +6,15 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('landing');
+  this.route('landing', {path: '/'});
+
+  this.route('sessions', function() {
+    this.route('create');
+  });
+
+  this.route('blog', function() {
+    this.route('home');
+  });
 });
 
 export default Router;

@@ -2,15 +2,14 @@
 	<h2 id="title">This is the header</h2>
 </section>
 
-<form action="" class="login">
-	<input text="text" name="userName">
-	<input text="text" name="password">
-	<input type="submit" value="Login">
-</form>
+{{#link-to 'sessions.create' classNames="login"}}
+	<button>Login</button>
+{{/link-to}}
 
-<form action="" class="view">
-	<input type="submit" value="View">
-</form>
+
+{{#link-to 'blog.home' classNames="view"}}
+	<button>View</button>
+{{/link-to}}
 
 <section class="footer">
 	<h2>This is the footer</h2>
