@@ -1,9 +1,15 @@
 <section class="header">
 	<h2 class="gegatronHeader">Gegatron</h2>
 	<h4 class="missionStatementHeader"> - Stories in Community - </h4>
-	<h4 class="aboutHeader">About</h4>
-	<h4 class="storiesHeader">Stories</h4>
-	<h4 class="contactHeader">Contact</h4>
+	{{#link-to 'blog.about' classNames='aboutHeader'}}
+		<h4 class="aboutHeader">About</h4>
+	{{/link-to}}
+	{{#link-to 'blog.stories' classNames='storiesHeader'}}
+		<h4 class="storiesHeader">Stories</h4>
+	{{/link-to}}
+	{{#link-to 'blog.contact' classNames='contactHeader'}}
+		<h4 class="contactHeader">Contact</h4>
+	{{/link-to}}
 </section>
 
 <section class="sideBar">

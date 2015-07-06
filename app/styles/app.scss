@@ -49,14 +49,17 @@ body {
   .aboutHeader {
     @include shift(3);
     @include span-columns(1);
+    text-decoration: none;
   }
   
   .storiesHeader {
     @include span-columns(1);
+    text-decoration: none;
   }
   
   .contactHeader {
     @include span-columns(1);
+    text-decoration: none;
   }
 }
 
