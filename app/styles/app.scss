@@ -1,7 +1,7 @@
 @import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
 $gutter: 0em;
 @import 'bower_components/neat/app/assets/stylesheets/neat';
-
+@import 'ember-paper';
 
 
 // Typography
@@ -49,17 +49,20 @@ body {
   .aboutHeader {
     @include shift(3);
     @include span-columns(1);
+    color: $very-light-gray;
     text-decoration: none;
   }
   
   .storiesHeader {
     @include span-columns(1);
     text-decoration: none;
+    color: $very-light-gray;
   }
   
   .contactHeader {
     @include span-columns(1);
     text-decoration: none;
+    color: $very-light-gray;
   }
 }
 
