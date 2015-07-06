@@ -14,6 +14,9 @@ Router.map(function() {
 
   this.route('blog', function() {
     this.route('home');
+    this.route('about');
+    this.route('stories');
+    this.route('contact');
   });
 });
 
