@@ -33,6 +33,31 @@ body {
   border-bottom-left-radius: 10px;
   background-color: #444444;
   @include span-columns(12);
+  @include outer-container();
+  
+  .gegatronHeader {
+    margin-left: 10px;
+    @include span-columns(2);
+    @include omega;
+  }
+  
+  .missionStatementHeader {
+    @include span-columns(3);
+    @include omega;
+  }
+  
+  .aboutHeader {
+    @include shift(3);
+    @include span-columns(1);
+  }
+  
+  .storiesHeader {
+    @include span-columns(1);
+  }
+  
+  .contactHeader {
+    @include span-columns(1);
+  }
 }
 
 .login {
@@ -81,11 +106,11 @@ body {
   border-top-right-radius: 10px;
   background-color: #444444;
   @include span-columns(12);
+  @include outer-container();
 }
 
 .sideBar {
-  @include span-columns(3);
-  @include shift(1);
+  @include span-columns(2);
   list-style: none;
   
   .sideBarItems {
@@ -101,9 +126,13 @@ body {
   }
 }
 
-.blogPosts {
-  @include span-columns(8);
-  list-style: none;
+
+.blogPostsContainer {
+  @include span-columns(9);
+  
+  .blogPosts {
+    list-style: none;
+  }
   
   .blogPost {
     padding-right: 20px;
