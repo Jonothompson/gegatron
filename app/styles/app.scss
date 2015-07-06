@@ -40,6 +40,34 @@ body {
   @include span-columns(6);
 }
 
+.userNameLogin {
+  @include span-columns(4);
+  @include shift(4);
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 250px;
+  margin-bottom: 35px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.passwordLogin {
+  @include span-columns(4);
+  @include shift(4);
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.loginButton {
+  @include span-columns(2);
+  @include shift(5);
+  height: 30px;
+  border-radius: 10px;
+}
+
 .view {
     text-align: center;
     @include span-columns(6);
@@ -55,14 +83,50 @@ body {
   @include span-columns(12);
 }
 
+.sideBar {
+  @include span-columns(3);
+  @include shift(1);
+  list-style: none;
+  
+  .sideBarItems {
+    padding: 20px;
+    background-color: #555555;
+    border-radius: 10px;
+    list-style: none;
+  }
+  
+  .sideBarItem {
+    margin-bottom: 15px;
+    margin-right: 48px;
+  }
+}
+
 .blogPosts {
+  @include span-columns(8);
   list-style: none;
   
   .blogPost {
+    padding-right: 20px;
     background-color: #555555;
     border-radius: 10px;
-    padding: 10px;
     margin-bottom: 15px;
     margin-right: 48px;
+  }
+  
+  .blogTitle {
+    padding: 10px;
+  }
+  
+  .divider { 
+    
+    border-bottom: 2px solid  #91C3DC;
+  }
+  
+  .blogContent {
+    padding: 10px;
+  }
+  
+  .blogData {
+    padding: 10px;
   }
 }
