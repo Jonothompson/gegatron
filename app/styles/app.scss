@@ -46,6 +46,10 @@ body {
     @include omega;
   }
   
+  .headerList {
+    list-style: none;
+  }
+  
   .aboutHeader {
     @include shift(3);
     @include span-columns(1);
@@ -53,10 +57,11 @@ body {
     text-decoration: none;
   }
   
-  .storiesHeader {
+  .storiesHeader, menu-item {
     @include span-columns(1);
     text-decoration: none;
     color: $very-light-gray;
+    position: relative;
   }
   
   .contactHeader {
@@ -65,6 +70,71 @@ body {
     color: $very-light-gray;
   }
 }
+//////////Nav Styling//////////////
+site-navigation {
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 40px;
+}
+
+.site-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.site-navigation li {
+  color: $very-light-gray;
+	display: block;
+	float: left;
+	margin: 0 2px 0 0;
+	padding: 12px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+  
+.site-navigation li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.site-navigation li:hover {
+	@include transition(background, 0.2s);
+	cursor: pointer;
+}
+
+.site-navigation ul li ul {
+	visibility: hidden;
+  background-color: #444444;
+	float: left;
+  min-width: 150px;
+	position: absolute;
+  transition: visibility 0.65s ease-in;
+  margin-top: 50px;
+	left: 0;
+	z-index: 999;
+}
+
+.site-navigation ul li:hover > ul,
+.site-navigation ul li ul:hover {
+   visibility: visible;
+   background-color: #444444;
+}
+
+.site-navigation ul li ul li {
+	clear: both;
+  background-color: #444444;
+	padding: 5px 0 5px 18px;
+  width: 100%;
+}
+
+.site-navigation ul li ul li:hover {
+	background: #74b7e4;
+}
+//////////////////////////////////
 
 .login {
   text-align: center;

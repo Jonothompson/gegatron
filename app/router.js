@@ -15,7 +15,10 @@ Router.map(function() {
   this.route('blog', function() {
     this.route('home');
     this.route('about');
-    this.route('stories');
+    this.route('stories', function() {
+      this.route('conduits');
+      this.route('short-stories');
+    });
     this.route('contact');
   });
 });
