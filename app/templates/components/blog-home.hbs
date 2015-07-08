@@ -53,13 +53,15 @@
 
 
 <section class="blogPostsContainer">
-	{{#each blog-post as |blog|}}
-		<li>
-			<h1>{{blog.title}}</h1>
-			<hr>
-			<p>{{blog.body}}</p>
-		</li>
-	{{/each}}
+	<ul class="blogPosts">
+		{{#each blog-post as |blog|}}
+			<li class="blogPost">
+				<h1 class="blogTitle">{{blog.title}}</h1>
+				<hr class="divider">
+				<p class="blogContent">{{blog.body}}</p>
+			</li>
+		{{/each}}
+	</ul>
 </section>
 
 <section class="footer">

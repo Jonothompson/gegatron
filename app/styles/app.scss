@@ -216,6 +216,8 @@ site-navigation {
     border-radius: 10px;
     margin-bottom: 15px;
     margin-right: 48px;
+    max-height: 300px;
+    overflow: hidden;
   }
   
   .blogTitle {
