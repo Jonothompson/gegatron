@@ -56,7 +56,9 @@
 	<ul class="blogPosts">
 		{{#each short-story as |short|}}
 			<li class="blogPost">
-				<h1 class="blogTitle">{{short.title}}</h1>
+				{{#link-to 'stories.short-story-show' short}}
+					<h1 class="blogTitle">{{short.title}}</h1>
+				{{/link-to}}
 				<hr class="divider">
 				<p class="blogContent">{{short.Body}}</p>
 			</li>
