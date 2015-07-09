@@ -53,22 +53,16 @@
 
 
 <section class="blogPostsContainer">
-	<ul class="blogPosts">
-		{{#each conduit-story as |conduit|}}
-			<li class="blogPost">
-				{{#link-to 'stories.conduits-show' conduit}}
-					<h1 class="blogTitle">{{conduit.chapter}}</h1>
-				{{/link-to}}
-				<hr class="divider">
-				<img src=' {{conduit.url}}'>
-				<p class="blogContent">{{conduit.chapterContent}}</p>
-			</li>
-		{{/each}}
-	</ul>
+	<h1 class="blogTitle">{{model.chapter}}</h1>
+	<hr class="divider">
+	<p class="blogContent">{{model.chapterContent}}</p>
 </section>
 
 <section class="footer">
 	<h2>This is the footer</h2>
 </section>
+
+{{yield}}
+
 
 {{yield}}
