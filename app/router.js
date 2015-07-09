@@ -24,6 +24,7 @@ Router.map(function() {
     this.route('conduits');
     this.route('short-stories');
     this.route('conduits-show', {path: '/:conduit_id'});
+    this.route('short-story-show', {path: '/:short_id:'});
   });
 });
 
