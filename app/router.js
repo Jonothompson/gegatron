@@ -17,6 +17,7 @@ Router.map(function() {
     this.route('stories');
     this.route('about');
     this.route('contact');
+    this.route('show', {path: '/:blog_id'});
   });
   
   this.route('stories', function() {

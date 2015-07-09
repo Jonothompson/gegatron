@@ -52,21 +52,23 @@
 </section>
 
 
-<section class="blogPostsContainer">
+<!--<section class="blogPostsContainer">
 	<ul class="blogPosts">
-		{{#each conduit-story as |conduit|}}
+		{{#each blog-post as |blog|}}
 			<li class="blogPost">
-				<h1 class="blogTitle">{{conduit.chapter}}</h1>
+				{{#link-to 'blog.show' blog}}
+					<h1 class="blogTitle">{{blog.title}}</h1>
+				{{/link-to}}
 				<hr class="divider">
-				<img src=' {{conduit.url}}'>
-				<p class="blogContent">{{conduit.chapterContent}}</p>
+				<p class="blogContent">{{blog.body}}</p>
 			</li>
 		{{/each}}
 	</ul>
-</section>
+</section>-->
 
 <section class="footer">
 	<h2>This is the footer</h2>
 </section>
+
 
 {{yield}}
