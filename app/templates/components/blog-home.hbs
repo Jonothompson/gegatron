@@ -56,7 +56,7 @@
 	<ul class="blogPosts">
 		{{#each blog-post as |blog|}}
 			<li class="blogPost">
-				{{#link-to 'blog.show' blog-post}}
+				{{#link-to 'blog.show' blog}}
 					<h1 class="blogTitle">{{blog.title}}</h1>
 				{{/link-to}}
 				<hr class="divider">

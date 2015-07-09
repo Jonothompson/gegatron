@@ -51,20 +51,11 @@
 	</ul>
 </section>
 
-
-<!--<section class="blogPostsContainer">
-	<ul class="blogPosts">
-		{{#each blog-post as |blog|}}
-			<li class="blogPost">
-				{{#link-to 'blog.show' blog}}
-					<h1 class="blogTitle">{{blog.title}}</h1>
-				{{/link-to}}
-				<hr class="divider">
-				<p class="blogContent">{{blog.body}}</p>
-			</li>
-		{{/each}}
-	</ul>
-</section>-->
+<section>
+	<h1 class="blogTitle">{{model.title}}</h1>
+	<hr class="divider">
+	<p class="blogContent">{{model.body}}</p>
+</section>
 
 <section class="footer">
 	<h2>This is the footer</h2>
