@@ -17,6 +17,11 @@ $very-light-gray: #fafafa;
 $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
+// override ember-paper
+html, body {
+  background: none;
+}
+
 body {
   padding-top: 78px;
   padding-bottom: 78px;
@@ -33,7 +38,6 @@ body {
   border-bottom-left-radius: 10px;
   background-color: #444444;
   @include span-columns(12);
-  @include outer-container();
   
   .gegatronHeader {
     margin-left: 10px;
