@@ -19,12 +19,16 @@ Router.map(function() {
     this.route('contact');
     this.route('show', {path: '/:blog_id'});
   });
-  
+
   this.route('stories', function() {
     this.route('conduits');
     this.route('short-stories');
     this.route('conduits-show', {path: ':conduit-story_id'});
     this.route('short-story-show', {path: 'short/:short_id:'});
+  });
+
+  this.route('users', function() {
+    this.route('current');
   });
 });
 

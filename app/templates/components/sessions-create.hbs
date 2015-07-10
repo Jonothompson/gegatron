@@ -1,0 +1,19 @@
+<section class="header">
+	<h2 id="title">This is the header</h2>
+</section>
+
+<form {{action 'authenticate' on='submit'}}>
+	{{paper-text label="Username" value=Username value=identification classNames='userNameLogin'}}
+	<!--<input class="userNameLogin" text="text" name="userName" placeholder="UserName">-->
+	{{paper-text label="Password" type="password" value=password classNames='passwordLogin'}}
+	<!--<input class="passwordLogin" text="text" name="password" placeholder="Password">-->
+	{{#paper-button raised=true action="targetButton" target=component type='submit' classNames='loginButton'}}Login{{/paper-button}}
+	<!--<input class="loginButton" type="submit" value="Login">-->
+</form>
+
+<section class="footer">
+	<h2>This is the footer</h2>
+</section>
+
+
+{{yield}}
