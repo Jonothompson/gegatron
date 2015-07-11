@@ -21,6 +21,9 @@ module.exports = function(environment) {
     },
     
     'simple-auth': {
+    authenticationRoute: 'sessions.create',
+    routeAfterAuthentication: 'users.current',
+    routeIfAlreadyAuthenticated:  'users.current',
     authorizer: 'authorizer:parse',
     crossOriginWhitelist: ['https://api.parse.com']
     },
@@ -28,7 +31,7 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self'",
-      'font-src': "'self'",
+      'font-src': "'self' fonts.gstatic.com",
       'connect-src': "'self' api.parse.com",
       'img-src': "'self'",
       'style-src': "'self'",
