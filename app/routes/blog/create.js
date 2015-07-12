@@ -7,7 +7,7 @@ export default Ember.Route.extend({
 	
 	action: {
 		save: function(blog){
-			blog();
+			blog.save();
 			this.transitionTo('blog.home');
 		}
 	}

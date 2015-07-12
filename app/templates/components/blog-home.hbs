@@ -57,7 +57,7 @@
 			{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary'}}New Blog Post{{/paper-button}}	
 	{{/link-to}}
 	<ul class="blogPosts">
-		{{#each blog-post as |blog|}}
+		{{#each model as |blog|}}
 			<li class="blogPost">
 				{{#link-to 'blog.show' blog}}
 					<h1 class="blogTitle">{{blog.title}}</h1>
