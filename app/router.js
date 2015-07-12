@@ -18,6 +18,7 @@ Router.map(function() {
     this.route('about');
     this.route('contact');
     this.route('show', {path: '/:blog_id'});
+    this.route('create');
   });
 
   this.route('stories', function() {
