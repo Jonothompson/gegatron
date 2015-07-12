@@ -53,6 +53,9 @@
 
 
 <section class="blogPostsContainer">
+	{{#link-to 'blog.create'}}
+			{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary'}}New Blog Post{{/paper-button}}	
+	{{/link-to}}
 	<ul class="blogPosts">
 		{{#each blog-post as |blog|}}
 			<li class="blogPost">
