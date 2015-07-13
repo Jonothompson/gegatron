@@ -5,7 +5,7 @@
 	<hr class="divider">
 	<p class="blogContent">{{blog.body}}</p>
 </li>
-{{#link-to 'blog.update'}}
+{{#link-to 'blog.update' blog}}
 	{{#paper-button raised=true target=component type='submit' classNames=' md-primary'}}Edit{{/paper-button}}
 {{/link-to}}
 {{#paper-button raised=true target=component type='submit' classNames=' md-primary' action='destroy'}}delete{{/paper-button}}
