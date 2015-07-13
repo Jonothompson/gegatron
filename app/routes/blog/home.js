@@ -10,9 +10,9 @@ export default Ember.Route.extend({
 			console.log(blog);
 			blog.destroyRecord();
 		},
-		update: function(blog){
-			blog.update();
-			this.transitionTo('blog.show')
-		}
+	// 	update: function(blog){
+	// 		blog.update();
+	// 		this.transitionTo('blog.show')
+	// 	}
 	}
 });
