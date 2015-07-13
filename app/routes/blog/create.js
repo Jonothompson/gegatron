@@ -5,7 +5,7 @@ export default Ember.Route.extend({
 		return this.store.createRecord('blog-post');
 	},
 	
-	action: {
+	actions: {
 		save: function(blog){
 			blog.save();
 			this.transitionTo('blog.home');
