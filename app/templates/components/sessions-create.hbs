@@ -11,6 +11,10 @@
 	<!--<input class="loginButton" type="submit" value="Login">-->
 </form>
 
+<h3>Don't have an accout?</h3>
+{{#link-to 'users.create'}}
+{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary'}}Sign up!{{/paper-button}}
+{{/link-to}}
 <section class="footer">
 	<h2>This is the footer</h2>
 </section>

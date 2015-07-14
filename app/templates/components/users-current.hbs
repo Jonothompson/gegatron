@@ -1,5 +1,5 @@
 <h1>Hello {{model.name}}</h1>
 {{#if session.isAuthenticated}}
-	{{#paper-button raised=true action='invalidateSession'}}Log Out{{/paper-button}}
+	{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary' action='invalidateSession'}}Log Out{{/paper-button}}
 {{/if}}
 {{yield}}
