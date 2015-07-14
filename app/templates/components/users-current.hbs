@@ -1,0 +1,5 @@
+<h1>Hello {{model.name}}</h1>
+{{#if session.isAuthenticated}}
+	{{#paper-button raised=true action='invalidateSession'}}Log Out{{/paper-button}}
+{{/if}}
+{{yield}}
