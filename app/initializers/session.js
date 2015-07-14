@@ -2,11 +2,18 @@ import Ember from 'ember';
 import Session from 'simple-auth/session';
 
 export default {
-  name: 'sessionUser',
+  name: 'session',
   before: 'simple-auth',
-  initialize: function(container) {                     
+  initialize: function(container) {
     Session.reopen({
-      currentUser: function() {}.property('currentUser')
+      isAdmin: function(){
+        if(!this.get('isAuthenticated')) {
+          return false;
+        } else {
+          var user = this.get('currentUser');
+          // return true if user is admin, otherwise false
+        }
+      }.property('currentUser')
     });
   }
 };

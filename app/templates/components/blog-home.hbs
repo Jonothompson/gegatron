@@ -38,9 +38,11 @@
 	<ul class="sideBarItems">
 		{{#each model as |blog|}}
 			<li class="blogPost">
-				{{#link-to 'blog.show' blog}}
-					<h1 class="blogTitle">{{blog.title}}</h1>
-				{{/link-to}}
+				{{#if session.isAdmin}}
+					{{#link-to 'blog.show' blog}}
+						<h1 class="blogTitle">{{blog.title}}</h1>
+					{{/link-to}}
+				{{/if}}
 			</li>
 		{{/each}}
 	</ul>
