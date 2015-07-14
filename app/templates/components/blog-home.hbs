@@ -38,11 +38,9 @@
 	<ul class="sideBarItems">
 		{{#each model as |blog|}}
 			<li class="blogPost">
-				{{#if session.isAdmin}}
-					{{#link-to 'blog.show' blog}}
-						<h1 class="blogTitle">{{blog.title}}</h1>
-					{{/link-to}}
-				{{/if}}
+				{{#link-to 'blog.show' blog}}
+					<h1 class="blogTitle">{{blog.title}}</h1>
+				{{/link-to}}
 			</li>
 		{{/each}}
 	</ul>
@@ -50,9 +48,11 @@
 
 
 <section class="blogPostsContainer">
-	{{#link-to 'blog.create'}}
-			{{#paper-button raised=true target=component type='submit' classNames=' md-primary'}}New Blog Post{{/paper-button}}	
-	{{/link-to}}
+	{{#if session.currentUser.isAdmin}}
+		{{#link-to 'blog.create'}}
+				{{#paper-button raised=true target=component type='submit' classNames=' md-primary'}}New Blog Post{{/paper-button}}	
+		{{/link-to}}
+	{{/if}}
 	<ul class="blogPosts">
 		{{#each model as |blog|}}
 			{{blog-preview blog=blog action='destroy'}}		
