@@ -6,9 +6,9 @@ export default Ember.Route.extend({
 	},
 	
 	actions: {
-		destroy: function(short){
-			console.log(short);
-			short.destroyRecord();
+		update: function(short){
+			short.save();
+			this.transitionTo('stories.short-stories');
 		}
 	}
 });

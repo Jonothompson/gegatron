@@ -34,7 +34,7 @@
 
 <section class="sideBar">
 	<ul class="sideBarItems">
-{{#each short-story as |short|}}
+{{#each model as |short|}}
 			<li class="blogPost">
 				{{#link-to 'stories.short-story-show' short}}
 					<h1 class="blogTitle">{{short.title}}</h1>
@@ -52,15 +52,9 @@
 		{{/link-to}}
 	{{/if}}
 	<ul class="blogPosts">
-		{{#each short-story as |short|}}
-			<li class="blogPost">
-				{{#link-to 'stories.short-story-show' short}}
-					<h1 class="blogTitle">{{short.title}}</h1>
-				{{/link-to}}
-				<hr class="divider">
-				<p class="blogContent">{{short.Body}}</p>
-			</li>
-		{{/each}}
+			{{#each model as |short|}}
+				{{short-story-preview short=short action='destroy'}}		
+			{{/each}}
 	</ul>
 </section>
 
