@@ -29,6 +29,7 @@ Router.map(function() {
     this.route('short-story-show', {path: 'short/:short_id:'});
     this.route('update-conduits', {path: '/:conduit-story_id/edit'});
     this.route('conduit-create');
+    this.route('short-story-create');
   });
 
   this.route('users', function() {

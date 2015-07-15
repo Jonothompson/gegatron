@@ -32,40 +32,9 @@
 	</nav>
 </section>
 
-<section class="sideBar">
-	<ul class="sideBarItems">
-{{#each short-story as |short|}}
-			<li class="blogPost">
-				{{#link-to 'stories.short-story-show' short}}
-					<h1 class="blogTitle">{{short.title}}</h1>
-				{{/link-to}}
-			</li>
-		{{/each}}
-	</ul>
-</section>
+{{input type='text' value=model.title placeholder='Title'}}
+{{input type='text' value=model.Body placeholder='Your Text Here...'}}
+{{#paper-button raised=true target=component type='submit' action='save' classNames='loginButton md-primary'}}Save{{/paper-button}}
 
-
-<section class="blogPostsContainer">
-	{{#if session.currentUser.isAdmin}}
-		{{#link-to 'stories.short-story-create'}}
-				{{#paper-button raised=true target=component type='submit' classNames=' md-primary'}}New Chapter{{/paper-button}}	
-		{{/link-to}}
-	{{/if}}
-	<ul class="blogPosts">
-		{{#each short-story as |short|}}
-			<li class="blogPost">
-				{{#link-to 'stories.short-story-show' short}}
-					<h1 class="blogTitle">{{short.title}}</h1>
-				{{/link-to}}
-				<hr class="divider">
-				<p class="blogContent">{{short.Body}}</p>
-			</li>
-		{{/each}}
-	</ul>
-</section>
-
-<section class="footer">
-	<h2>This is the footer</h2>
-</section>
 
 {{yield}}
