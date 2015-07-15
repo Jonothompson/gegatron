@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 	actions: {
-		destroy: function(conduit){
-			this.sendAction('action', conduit);
+		save: function(){
+			this.sendAction('action', this.get('model'));
 		}
 	}
 });
