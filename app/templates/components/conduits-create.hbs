@@ -1,36 +1,3 @@
-<section class="header">
-	<h2 class="gegatronHeader">Gegatron</h2>
-	<h4 class="missionStatementHeader"> - Stories in Community - </h4>
-	<nav id="navigation" class="site-navigation" role="navigation">
-	  <ul class="menu">
-		 <li class="menu-item">
-			{{#link-to 'blog.about' classNames='aboutHeader'}}
-				<h4 class="aboutHeader">About</h4>
-			{{/link-to}}
-		</li>
-		<li class='menu-item'>
-			<h4 class="storiesHeader">Stories</h4>
-			<ul class="dropDownList hidden">
-				<li class="menu-item sub-menu">
-					{{#link-to 'stories.conduits'}}
-						<h4>Conduits</h4>
-					{{/link-to}}		
-				</li>
-				<li class="menu-item sub-menu">
-					{{#link-to 'stories.short-stories'}}
-						<h4>Short Stories</h4>
-					{{/link-to}}		
-				</li>
-			</ul>
-		</li>
-		<li class="menu-item">	
-			{{#link-to 'blog.contact' classNames='contactHeader'}}
-				<h4 class="contactHeader">Contact</h4>
-			{{/link-to}}
-		</li>
-	  </ul>
-	</nav>
-</section>
 
 {{input type='text' value=model.chapter placeholder='Title'}}
 {{input type='text' value=model.chapterContent placeholder='Your Text Here...'}}

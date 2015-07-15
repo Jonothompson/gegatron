@@ -1,44 +1,8 @@
-<section class="header">
-	<h2 class="gegatronHeader">Gegatron</h2>
-	<h4 class="missionStatementHeader"> - Stories in Community - </h4>
-	<nav id="navigation" class="site-navigation" role="navigation">
-	  <ul class="menu">
-		 <li class="menu-item">
-			{{#link-to 'blog.about' classNames='aboutHeader'}}
-				<h4 class="aboutHeader">About</h4>
-			{{/link-to}}
-		</li>
-		<li class='menu-item'>
-			<h4 class="storiesHeader">Stories</h4>
-			<ul class="dropDownList hidden">
-				<li class="menu-item sub-menu">
-					{{#link-to 'stories.conduits'}}
-						<h4>Conduits</h4>
-					{{/link-to}}		
-				</li>
-				<li class="menu-item sub-menu">
-					{{#link-to 'stories.short-stories'}}
-						<h4>Short Stories</h4>
-					{{/link-to}}		
-				</li>
-			</ul>
-		</li>
-		<li class="menu-item">	
-			{{#link-to 'blog.contact' classNames='contactHeader'}}
-				<h4 class="contactHeader">Contact</h4>
-			{{/link-to}}
-		</li>
-	  </ul>
-	</nav>
-</section>
 
 <form {{action 'authenticate' on='submit'}}>
 	{{paper-text label="Username" value=Username value=identification classNames='userNameLogin'}}
-	<!--<input class="userNameLogin" text="text" name="userName" placeholder="UserName">-->
 	{{paper-text label="Password" type="password" value=password classNames='passwordLogin'}}
-	<!--<input class="passwordLogin" text="text" name="password" placeholder="Password">-->
 	{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary'}}Login{{/paper-button}}
-	<!--<input class="loginButton" type="submit" value="Login">-->
 </form>
 
 <h3>Don't have an accout?</h3>
