@@ -6,9 +6,9 @@ export default Ember.Route.extend({
 	},
 	
 	actions: {
-		destroy: function(conduit){
-			console.log(conduit);
-			conduit.destroyRecord();
+		update: function(conduit){
+			conduit.save();
+			this.transitionTo('stories.conduits');
 		}
 	}
 });
