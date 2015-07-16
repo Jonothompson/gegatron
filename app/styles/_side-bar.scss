@@ -1,16 +1,23 @@
 .sideBar {
   @include span-columns(2);
+  padding: 15px;
   list-style: none;
-  
+   
   .sideBarItems {
     padding: 20px;
-    background-color: #555555;
+    background-color: #424242;
     border-radius: 10px;
     list-style: none;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   }
   
   .sideBarItem {
     margin-bottom: 15px;
     margin-right: 48px;
+  }
+  
+  h1.blogTitle {
+    color: $very-light-gray;
+    text-decoration: none;    
   }
 }

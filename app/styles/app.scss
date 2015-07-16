@@ -71,14 +71,16 @@ body {
   bottom:0px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: #444444;
+  background-color: #000000;
   @include span-columns(12);
-  @include outer-container();
+  z-index: 999;
 }
 
 .blogPostsContainer {
-  @include span-columns(9);
+  @include span-columns(8);
   padding-bottom: 78px;
+  background-color: #303030;
+  border-radius: 10px;
   
   .blogPosts {
     list-style: none;
@@ -86,16 +88,19 @@ body {
   
   .blogPost {
     padding-right: 20px;
-    background-color: #555555;
+    background-color: #424242;
     border-radius: 10px;
     margin-bottom: 15px;
     margin-right: 48px;
     max-height: 300px;
     overflow: hidden;
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   }
   
   .blogTitle {
     padding: 10px;
+    text-decoration: none;
+    color: $very-light-gray;
   }
   
   .divider {  
@@ -111,14 +116,21 @@ body {
   }
 }
 
+.create-new-button {
+  margin-right: 48px;
+}
 ////////////about page////////////////
 
 .aboutContainer {
   @include span-columns(10);
   @include shift(1);
   padding-right: 20px;
-  background-color: #555555;
+  background-color: #424242;
   border-radius: 10px;
   margin-bottom: 15px;
   margin-right: 48px;
+}
+
+a {
+  text-decoration: none;
 }

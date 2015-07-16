@@ -1,3 +1,4 @@
+{{#if shouldShowHeader}}
 <section class="header">
 	{{#link-to 'landing'}}
 		<img class="gegatronHeader" src='../images/Gegatron Logo and Fon 2t.jpg'>
@@ -23,6 +24,7 @@
 						<h4>Conduits</h4>
 					{{/link-to}}		
 				</li>
+				<hr>
 				<li class="menu-item sub-menu">
 					{{#link-to 'stories.short-stories'}}
 						<h4>Short Stories</h4>
@@ -35,14 +37,19 @@
 				<h4 class="contactHeader">Contact</h4>
 			{{/link-to}}
 		</li>
-		<li class="menu-item">	
+		<li class="menu-item header-logout-button">	
 			{{#if session.isAuthenticated}}
 				{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary' action='invalidateSession'}}Log Out{{/paper-button}}
+			{{else}}
+				{{#link-to 'sessions.create'}}
+					{{#paper-button raised=true target=component type='submit' classNames=' md-primary loginButton'}}Log In{{/paper-button}}
+				{{/link-to}}
 			{{/if}}
 		</li>
 	  </ul>
 
 	</nav>
 </section>
-
+{{/if}}
 {{outlet}}
+{{log currentPath}}

@@ -7,6 +7,7 @@
   border-bottom-left-radius: 10px;
   background-color: #000000;
   @include span-columns(12);
+  z-index: 999;
   
   .gegatronHeader {
     margin-top: 7px;
@@ -15,6 +16,7 @@
   }
   
   .missionStatementHeader {
+    color: $very-light-gray;
     text-decoration: none;
     @include span-columns(2);
   }
@@ -23,34 +25,23 @@
     list-style: none;
   }
   
-  .aboutHeader {
-    @include shift(3);
-    @include span-columns(1);
-    color: $very-light-gray;
-    text-decoration: none;
-  }
-  
-  .storiesHeader, menu-item {
-    @include span-columns(1);
-    text-decoration: none;
-    color: $very-light-gray;
-    position: relative;
-  }
-  
-  .contactHeader {
-    @include span-columns(1);
-    text-decoration: none;
-    color: $very-light-gray;
+  .header-logout-button {
+    margin-top: 7px;
   }
 }
 ///////////////////////////////////
 
 //////////Nav Styling//////////////
+nav {
+  align-content: center;
+  @include span-columns(4);
+  @include shift(4);
+}
+
 site-navigation {
 	display: block;
 	font-size: 16px;
 	font-weight: bold;
-	// margin: 40px;
 }
 
 .site-navigation ul {
@@ -84,11 +75,10 @@ site-navigation {
 .site-navigation ul li ul {
 	visibility: hidden;
   background-color: #000000;
+  padding-left: 5px;
 	float: left;
-  // min-width: 150px;
 	position: absolute;
   transition: visibility 0.65s ease-in;
-  margin-top: 50px;
 	left: 0;
 	// z-index: 999;
 }
@@ -108,5 +98,8 @@ site-navigation {
 
 .site-navigation ul li ul li:hover {
 	background: #74b7e4;
+}
+.sub-menu {
+  width: 150px;
 }
 //////////////////////////////////

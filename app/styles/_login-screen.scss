@@ -7,6 +7,7 @@
   position: fixed; 
   top: 100px; 
   left: 450px; 
+  
   	
   /* Preserve aspet ratio */
   max-width: 90%;
@@ -26,6 +27,7 @@
   height: 100px;
   padding-top: 35px;
   font-size: 40px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .view-button {
@@ -35,6 +37,7 @@
   height: 100px;
   padding-top: 35px;
   font-size: 40px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .md-primary {
