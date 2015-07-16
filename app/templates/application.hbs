@@ -1,13 +1,18 @@
 <section class="header">
 	{{#link-to 'landing'}}
-		<h2 class="gegatronHeader">Gegatron</h2>
+		<img class="gegatronHeader" src='../images/Gegatron Logo and Fon 2t.jpg'>
+		<h4 class="missionStatementHeader"> - Stories in Community - </h4>
 	{{/link-to}}
-	<h4 class="missionStatementHeader"> - Stories in Community - </h4>
 	<nav id="navigation" class="site-navigation" role="navigation">
 	  <ul class="menu">
 		 <li class="menu-item">
 			{{#link-to 'blog.about' classNames='aboutHeader'}}
 				<h4 class="aboutHeader">About</h4>
+			{{/link-to}}
+		</li>
+		<li class="menu-item">
+			{{#link-to 'blog.home' classNames='aboutHeader'}}
+				<h4 class="aboutHeader">blog</h4>
 			{{/link-to}}
 		</li>
 		<li class='menu-item'>
@@ -30,7 +35,13 @@
 				<h4 class="contactHeader">Contact</h4>
 			{{/link-to}}
 		</li>
+		<li class="menu-item">	
+			{{#if session.isAuthenticated}}
+				{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary' action='invalidateSession'}}Log Out{{/paper-button}}
+			{{/if}}
+		</li>
 	  </ul>
+
 	</nav>
 </section>
 

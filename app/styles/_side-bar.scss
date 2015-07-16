@@ -1,0 +1,16 @@
+.sideBar {
+  @include span-columns(2);
+  list-style: none;
+  
+  .sideBarItems {
+    padding: 20px;
+    background-color: #555555;
+    border-radius: 10px;
+    list-style: none;
+  }
+  
+  .sideBarItem {
+    margin-bottom: 15px;
+    margin-right: 48px;
+  }
+}

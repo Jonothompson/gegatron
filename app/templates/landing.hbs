@@ -1,18 +1,13 @@
-<section class="header">
-	<h2 id="title">This is the header</h2>
-</section>
-
-{{#link-to 'sessions.create' classNames="login"}}
-	<button>Login</button>
-{{/link-to}}
-
-
-{{#link-to 'blog.home' classNames="view"}}
-	<button>View</button>
-{{/link-to}}
-
-<section class="footer">
-	<h2>This is the footer</h2>
+<section class="landing-page-container">
+	{{#link-to 'sessions.create' classNames="login"}}
+			{{#paper-button raised=true target=component type='submit' classNames=' md-primary login-button'}}Log In{{/paper-button}}
+	{{/link-to}}
+	
+	<img class="landing-logo" src='../images/Gegatron logo illustrator final.png'>
+	
+	{{#link-to 'blog.home' classNames="view"}}
+			{{#paper-button raised=true target=component type='submit' classNames=' md-primary view-button'}}View{{/paper-button}}
+	{{/link-to}}
 </section>
 
 

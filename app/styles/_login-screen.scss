@@ -1,0 +1,43 @@
+//////////login screen//////////////
+.landing-page-container {
+
+}
+
+.landing-logo {
+  position: fixed; 
+  top: 100px; 
+  left: 450px; 
+  	
+  /* Preserve aspet ratio */
+  max-width: 90%;
+  max-height: 90%;
+  @include flipInY(
+  $duration: 2s,
+  $delay: .5s,
+  $function: ease, 
+  $fill: both
+  );
+}
+
+.login-button  {
+  @include span-columns(1.5);
+  @include shift(1);
+  margin-top: 450px;
+  height: 100px;
+  padding-top: 35px;
+  font-size: 40px;
+}
+
+.view-button {
+  @include span-columns(1.5);
+  @include shift(7);
+  margin-top: 450px;
+  height: 100px;
+  padding-top: 35px;
+  font-size: 40px;
+}
+
+.md-primary {
+  color: black;
+}
+///////////////////////////////////
