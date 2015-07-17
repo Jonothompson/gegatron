@@ -2,11 +2,14 @@
 $gutter: 0em;
 @import 'bower_components/neat/app/assets/stylesheets/neat';
 @import 'bower_components/animate.css-scss/animate.scss';
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import 'color-palette';
 @import 'ember-paper';
 
 
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: 'Raleway', 'Roboto', sans-serif;;
 
 // Colors
 $blue: #477dca;
@@ -28,6 +31,9 @@ $base-background-color: $very-light-gray;
 html, body {
   background: none;
 }
+
+
+
 
 body {
   padding-top: 78px;
@@ -87,20 +93,24 @@ body {
   }
   
   .blogPost {
+    margin-top: 15px;
     padding-right: 20px;
+    padding-bottom: 10px;
     background-color: #424242;
     border-radius: 10px;
     margin-bottom: 15px;
     margin-right: 48px;
-    max-height: 300px;
-    overflow: hidden;
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
   }
   
   .blogTitle {
-    padding: 10px;
+    padding: 20px 10px 0px 10px;
     text-decoration: none;
     color: $very-light-gray;
+  }
+  
+  h1.blogTitle:hover{
+    color: $blue;
   }
   
   .divider {  
@@ -108,11 +118,11 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   }
   
   .blogContent {
-    padding: 10px;
-  }
-  
-  .blogData {
-    padding: 10px;
+    padding: 10px 50px 10px 50px;;
+    line-height: 25px;
+    max-height: 165px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 

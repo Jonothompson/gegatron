@@ -1,18 +1,13 @@
 
 <section class="sideBar">
 	<ul class="sideBarItems">
-		<li class="sideBarItem">Item 1</li>
-		<li class="sideBarItem">Item 2</li>
-		<li class="sideBarItem">Item 3</li>
-		<li class="sideBarItem">Item 4</li>
-		<li class="sideBarItem">Item 5</li>
-		<li class="sideBarItem">Item 6</li>
-		<li class="sideBarItem">Item 7</li>
-		<li class="sideBarItem">Item 8</li>
-		<li class="sideBarItem">Item 9</li>
-		<li class="sideBarItem">Item 10</li>
-		<li class="sideBarItem">Item 11</li>
-		<li class="sideBarItem">Item 12</li>
+		{{#each model as |blog|}}
+			<li class="blogPost">
+				{{#link-to 'blog.show' blog}
+					<h1 class="blogTitle">{{model.title}}</h1>
+				{{/link-to}}
+			</li>
+		{{/each}}
 	</ul>
 </section>
 
