@@ -1,21 +1,30 @@
 
 <section class="sideBar">
-	<ul class="sideBarItems">
-		{{#each model as |blog|}}
-			<li class="blogPost">
-				{{#link-to 'blog.show' blog}}
-					<h1 class="blogTitle">{{blog.title}}</h1>
-				{{/link-to}}
-			</li>
-		{{/each}}
+<ul class="sideBarItems">
+		<li class="sideBarItem">Item 1</li>
+		<li class="sideBarItem">Item 2</li>
+		<li class="sideBarItem">Item 3</li>
+		<li class="sideBarItem">Item 4</li>
+		<li class="sideBarItem">Item 5</li>
+		<li class="sideBarItem">Item 6</li>
+		<li class="sideBarItem">Item 7</li>
+		<li class="sideBarItem">Item 8</li>
+		<li class="sideBarItem">Item 9</li>
+		<li class="sideBarItem">Item 10</li>
+		<li class="sideBarItem">Item 11</li>
+		<li class="sideBarItem">Item 12</li>
 	</ul>
 </section>
 
-
-<section class="blogPostsContainer">
-	<h1 class="blogTitle">{{model.chapter}}</h1>
-	<hr class="divider">
-	<p class="blogContent">{{model.chapterContent}}</p>
+<section class="blogPostContainer">
+	<section class="Post">
+		<h1 class="blogPostTitle">{{model.chapter}}</h1>
+		<hr class="divider">
+		<p class="blogPostContent">{{model.chapterContent}}</p>
+		{{#link-to 'stories.conduits'}}
+			{{#paper-button raised=true target=component type='submit' classNames=' md-primary'}}Back{{/paper-button}}
+		{{/link-to}}
+	</section>
 </section>
 
 <section class="footer">
