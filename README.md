@@ -1,7 +1,17 @@
-# Gegatron
+# Welcom to Gegatron
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+  Gegatron's website and blog it exsists exists to create community that encourages quality storytelling and       creativity in the science fiction and fantasy genres.
+  
+  * The blog is our personal outlet for encouters, experiances and story telling.
+  * We aim to see people communicate their ideas and share those with an online community.
+  * This web app was designed to allow people with no access to things Adobe Photoshop, and other digital photo editing software to access the Sumo Paint embedded application and save those to a secure server and build their story boards. 
+  * There are more features that Gegatron hopes to implement in the future, but for now we hope to see a small community grow out of this.
+  
+
+# Website Development
+
+  Gegatron's site was built using Ember.js and Sumo Paint. if you wish to contrubute to Gegatron's goals the information below will get you started. 
+
 
 ## Prerequisites
 
