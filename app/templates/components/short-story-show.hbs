@@ -21,7 +21,7 @@
 	<section class="Post">
 		<h1 class="blogPostTitle">{{model.title}}</h1>
 		<hr class="divider">
-		<p class="blogPostContent">{{model.Body}}</p>
+		<p class="blogPostContent">{{line-breaks model.Body}}</p>
 		{{#link-to 'blog.home'}}
 			{{#paper-button raised=true target=component type='submit' classNames=' md-primary'}}Back{{/paper-button}}
 		{{/link-to}}
@@ -31,6 +31,7 @@
 <section class="footer">
 	<h2>This is the footer</h2>
 </section>
+{{log model}}
 
 
 

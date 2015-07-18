@@ -19,7 +19,7 @@
 	<section class="Post">
 		<h1 class="blogPostTitle">{{model.title}}</h1>
 		<hr class="divider">
-		<p class="blogPostContent">{{model.body}}</p>
+		<p class="blogPostContent">{{line-breaks model.body}}</p>
 		{{#link-to 'blog.home'}}
 			{{#paper-button raised=true target=component type='submit' classNames=' md-primary'}}Back{{/paper-button}}
 		{{/link-to}}

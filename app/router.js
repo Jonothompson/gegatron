@@ -17,16 +17,16 @@ Router.map(function() {
     this.route('stories');
     this.route('about');
     this.route('contact');
-    this.route('show', {path: '/:blog_id'});
+    this.route('show', {path: ':blog-post_id'});
     this.route('create');
-    this.route('update', {path: '/:blog_id/edit'});
+    this.route('update', {path: '/:blog-post_id/edit'});
   });
 
   this.route('stories', function() {
     this.route('conduits');
     this.route('short-stories');
     this.route('conduits-show', {path: ':conduit-story_id'});
-    this.route('short-story-show', {path: 'short/:short_id:'});
+    this.route('short-story-show', {path: ':short-story_id'});
     this.route('update-conduits', {path: '/:conduit-story_id/edit'});
     this.route('conduit-create');
     this.route('short-story-create');
