@@ -10,7 +10,7 @@
   z-index: 999;
   
   .gegatronHeader {
-    margin-top: 7px;
+    margin-top: 14px;
     margin-left: 10px;
     @include span-columns(1);
     @include shift(2);
@@ -27,7 +27,7 @@
   }
   
   .header-logout-button {
-    margin-top: 7px;
+    margin-top: 15px;
   }
 }
 ///////////////////////////////////
@@ -81,7 +81,6 @@ site-navigation {
 	position: absolute;
   transition: visibility 0.65s ease-in;
 	left: 0;
-	// z-index: 999;
 }
 
 .site-navigation ul li:hover > ul,
@@ -94,7 +93,6 @@ site-navigation {
 	clear: both;
   background-color: #000000;
 	padding: 5px 0 5px 0px;
-  // width: 100%;
 }
 
 .site-navigation ul li ul li:hover {

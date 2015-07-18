@@ -1,3 +1,6 @@
-{{input type='text' value=model.title placeholder='test'}}
-{{input type='text' value=model.Body placeholder='Your Text Here...'}}
-{{#paper-button raised=true target=component type='submit' action='update' classNames='loginButton md-primary'}}Update{{/paper-button}}
+{{input type='text' value=model.title placeholder='test'classNames='title-update-form' }}
+{{input type='text' value=model.Body placeholder='Your Text Here...' classNames='body-update-form'}}
+{{#paper-button raised=true target=component type='submit' action='update' classNames='update-button md-primary'}}Update{{/paper-button}}
+{{#link-to 'stories.short-stories'}}
+	{{#paper-button raised=true target=component type='submit' classNames='cancel-button md-primary'}}Cancel{{/paper-button}}
+{{/link-to}}

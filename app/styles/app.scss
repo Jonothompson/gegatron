@@ -190,7 +190,7 @@ body {
 a {
   text-decoration: none;
 }
-
+///////update pages/////////
 .title-update-form{
   margin: 75px 0px 15px 0px;
   @include span-columns(4);
@@ -203,4 +203,14 @@ a {
   @include shift(4);
   height: 500px;
   margin-bottom: 15px;
+}
+
+.update-button {
+  @include span-columns(1);
+  @include shift(5);
+}
+
+.cancel-button {
+  @include span-columns(1);
+
 }
