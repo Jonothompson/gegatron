@@ -1,6 +1,6 @@
 # Welcom to Gegatron
 
-  Gegatron's website and blog it exsists exists to create community that encourages quality storytelling and       creativity in the science fiction and fantasy genres.
+  Gegatron's website and blog exsists exists to create community that encourages quality storytelling and       creativity in the science fiction and fantasy genres.
   
   * The blog is our personal outlet for encouters, experiances and story telling.
   * We aim to see people communicate their ideas and share those with an online community.
