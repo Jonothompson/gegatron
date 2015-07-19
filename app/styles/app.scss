@@ -214,3 +214,8 @@ a {
   @include span-columns(1);
 
 }
+
+.sumo-paint {
+  @include span-columns(12);
+  height: 100%;
+}

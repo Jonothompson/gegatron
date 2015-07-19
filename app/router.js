@@ -37,6 +37,7 @@ Router.map(function() {
     this.route('current');
     this.route('create');
   });
+  this.route('sumo-paint');
 });
 
 export default Router;
