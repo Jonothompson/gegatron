@@ -39,7 +39,9 @@
 		</li>
 		<li class="menu-item header-logout-button">	
 			{{#if session.isAuthenticated}}
-				{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary' action='invalidateSession'}}Log Out{{/paper-button}}
+				{{#link-to 'users.current'}}
+					{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary'}}Home{{/paper-button}}
+				{{/link-to}}
 			{{else}}
 				{{#link-to 'sessions.create'}}
 					{{#paper-button raised=true target=component type='submit' classNames=' md-primary loginButton'}}Log In{{/paper-button}}

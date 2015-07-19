@@ -38,6 +38,10 @@ Router.map(function() {
     this.route('create');
   });
   this.route('sumo-paint');
+
+  this.route('pictures', function() {
+    this.route('picture-create');
+  });
 });
 
 export default Router;

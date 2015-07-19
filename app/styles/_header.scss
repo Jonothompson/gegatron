@@ -29,6 +29,10 @@
   .header-logout-button {
     margin-top: 15px;
   }
+  
+  .home-button {
+    @include span-columns(1);
+  }
 }
 ///////////////////////////////////
 
@@ -101,4 +105,6 @@ site-navigation {
 .sub-menu {
   width: 150px;
 }
+
+
 //////////////////////////////////
