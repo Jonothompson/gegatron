@@ -13,9 +13,9 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
 		},
 		
 	filePick: function(params) {
-		var upload = this.store.createRecord('file-picker', params);
-		console.log(params);
-		// upload.save();
+		params.owner=this.get('session.currentUser');
+		var upload = this.store.createRecord('story-board-image', params);
+		upload.save();
 		}
 	}
 });

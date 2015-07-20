@@ -7,10 +7,13 @@ export default Ember.Component.extend({
 		},
 		
 		filePick: function() {
-			filepicker.pick(function(){
-				return params;
-			});
-			this.sendAction('filePick', params);
+			filepicker.pick(function(blob){
+				this.sendAction('filePick', {
+					url: blob.url,
+					filename: blob.filename
+				});
+			}.bind(this));
+
 		}
 		
 	}
