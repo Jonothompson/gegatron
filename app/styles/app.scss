@@ -39,6 +39,11 @@ body {
   font-size: 20px;
   background-color: #212121;
   color: $very-light-gray;
+  @include media(max-width 400px) {
+    font-size: 10px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
 }
 
 .userNameLogin {
@@ -173,16 +178,28 @@ body {
   padding-bottom: 78px;
   background-color: #303030;
   border-radius: 10px;
+  @include media(max-width 400px) {
+    @include span-columns(10);
+    @include shift(1);
+    padding-bottom: 42px;
+  }
   
   .abouts {
     margin-top: 15px;
-    padding: 10px 50px 10px 50px;;
+    padding: 10px 50px 10px 50px;
     background-color: #424242;
     border-radius: 10px;
     margin-bottom: 15px;
     margin-right: 48px;
     margin-left: 48px;
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+    @include media(max-width 400px) {
+      padding: 1px 10px 1px 10px;
+      margin-bottom: 5px;
+      margin-right: 10px;
+      margin-left: 10px;
+      
+    }
   }
   
   

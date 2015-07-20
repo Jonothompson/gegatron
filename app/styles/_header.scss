@@ -14,12 +14,20 @@
     margin-left: 10px;
     @include span-columns(1);
     @include shift(2);
+    @include media(max-width 400px) {
+      @include span-columns(2);
+      @include shift(1);
+      margin-top: 9px;
+    }
   }
   
   .missionStatementHeader {
     color: $very-light-gray;
     text-decoration: none;
     @include span-columns(2);
+    @include media(max-width 400px) {
+      display: none;
+    }
   }
   
   .headerList {
@@ -28,10 +36,16 @@
   
   .header-logout-button {
     margin-top: 15px;
+    @include media(max-width 400px) {
+      display: none;
+    }
   }
   
   .home-button {
     @include span-columns(1);
+    @include media(max-width 400px) {
+      display: none;
+    }
   }
 }
 ///////////////////////////////////
@@ -41,12 +55,19 @@ nav {
   align-content: center;
   @include span-columns(4);
   @include shift(2);
+  @include media(max-width 400px) {
+      @include span-columns(8);
+      @include shift(1);
+    }
 }
 
 site-navigation {
 	display: block;
 	font-size: 16px;
 	font-weight: bold;
+  @include media(max-width 400px) {
+    font-size: 10px;
+  }
 }
 
 .site-navigation ul {
@@ -64,6 +85,10 @@ site-navigation {
 	position: relative;
 	text-decoration: none;
 	text-transform: uppercase;
+  @include media(max-width 400px) {
+    display: inline-block;
+    padding: 0 0px 0 12px;
+  }
 }
   
 .site-navigation li a {
@@ -104,6 +129,9 @@ site-navigation {
 }
 .sub-menu {
   width: 150px;
+  @include media(max-width 400px) {
+    width: 55px;
+  }
 }
 
 
