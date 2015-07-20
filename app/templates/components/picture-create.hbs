@@ -1,3 +1,4 @@
 {{input type='text' value=model.title placeholder='Title' classNames='title-update-form'}}
-{{input type='file' value=model.picture placeholder='Your file here' classNames='image-upload-form'}}
+
+<input type="filepicker" data-fp-apikey="A2SmW2AexQyeShOQls9Zlz" onchange="alert(event.fpfile.url)">
 {{#paper-button raised=true target=component type='submit' action='save' classNames='loginButton md-primary'}}Upload{{/paper-button}}
