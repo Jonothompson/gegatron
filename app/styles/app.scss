@@ -221,3 +221,9 @@ a {
   height: 1010;
   // width="1854" height="1010"
 }
+
+.image-upload-form {
+  @include span-columns(3);
+  @include shift(5);
+  margin-bottom: 15px;
+}
