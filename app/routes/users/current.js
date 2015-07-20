@@ -10,6 +10,12 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
 	actions: {
 		invalidateSession: function() {
 		this.get('session').invalidate();
+		},
+		
+	filePick: function(params) {
+		var upload = this.store.createRecord('file-picker', params);
+		console.log(params);
+		// upload.save();
 		}
 	}
 });

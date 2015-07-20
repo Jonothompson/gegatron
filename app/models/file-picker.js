@@ -1,6 +1,10 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  title: DS.attr('string'),
+  filename: DS.attr('string'),
+  id: DS.attr('number'),
+  isWriteable: DS.attr('boolean'),
+  mimetype: DS.attr('string'),
+  size: DS.attr('number'),
   url: DS.attr('string')
 });

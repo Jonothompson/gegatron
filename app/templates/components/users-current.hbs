@@ -5,9 +5,7 @@
 	{{#link-to 'sumo-paint'}}
 		{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary'}}Paint!{{/paper-button}}
 	{{/link-to}}
-	{{#link-to 'pictures.picture-create'}}
-		{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary'}}Upload Files{{/paper-button}}
-	{{/link-to}}
+	{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary' action='filePick'}}Upload Files{{/paper-button}}
 {{/if}}
 
 {{yield}}

@@ -4,6 +4,14 @@ export default Ember.Component.extend({
 	actions: {
 		invalidateSession: function() {
 			this.sendAction('action', this.get('model'));
+		},
+		
+		filePick: function() {
+			filepicker.pick(function(){
+				return params;
+			});
+			this.sendAction('filePick', params);
 		}
+		
 	}
 });
