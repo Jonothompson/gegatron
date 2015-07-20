@@ -92,9 +92,17 @@ body {
   padding-bottom: 78px;
   background-color: #303030;
   border-radius: 10px;
+  @include media(max-width 400px) {
+    @include span-columns(10);
+    @include shift(1);
+    padding-bottom: 42px;
+  }
   
   .blogPosts {
     list-style: none;
+    @include media(max-width 400px) {
+      padding: 1px 0px 1px 0px;
+    }
   }
   
   .blogPost {
@@ -106,12 +114,19 @@ body {
     margin-bottom: 15px;
     margin-right: 48px;
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+    @include media(max-width 400px) {
+      padding: 1px 10px 1px 10px;
+      margin: 0 10px 5px 10px;
+    }
   }
   
   .blogTitle {
     padding: 20px 10px 0px 10px;
     text-decoration: none;
     color: $very-light-gray;
+    @include media(max-width 400px) {
+      padding: 0px 10px 0px 10px;
+    }
   }
   
   h1.blogTitle:hover{
@@ -128,6 +143,10 @@ body {
     max-height: 165px;
     overflow: hidden;
     text-overflow: ellipsis;
+    @include media(max-width 400px) {
+      padding: 1px 10px 1px 10px;
+      max-height: 100px;
+    }
   }
 }
 
