@@ -20,34 +20,6 @@ body {
   }
 }
 
-.userNameLogin {
-  @include span-columns(4);
-  @include shift(4);
-  height: 50px;
-  border-radius: 10px;
-  margin-top: 200px;
-  margin-bottom: 35px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.passwordLogin {
-  @include span-columns(4);
-  @include shift(4);
-  height: 50px;
-  border-radius: 10px;
-  margin-bottom: 35px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.loginButton {
-  @include span-columns(2);
-  @include shift(5);
-  height: 30px;
-  border-radius: 10px;
-}
-
 .create-new-button {
   margin-right: 48px;
 }

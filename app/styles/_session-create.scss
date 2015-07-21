@@ -1,0 +1,31 @@
+.sign-up-header {
+	@include span-columns(2);
+	@include shift(5);
+	text-align: center;
+}
+
+.userNameLogin {
+  @include span-columns(4);
+  @include shift(5);
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 200px;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+.passwordLogin {
+  @include span-columns(4);
+  @include shift(5);
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+.loginButton {
+  @include span-columns(2);
+  @include shift(5);
+  height: 30px;
+  border-radius: 10px;
+}
