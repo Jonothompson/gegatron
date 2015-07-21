@@ -30,7 +30,8 @@
   @include shift(3);
   margin-top: 50px;
   margin-bottom: 50px;
-  align-content: center;
+
+  text-align: center;
   font-size: 80px;
   color: black;
   @include media(max-width 400px) {
