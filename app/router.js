@@ -41,6 +41,7 @@ Router.map(function() {
 
   this.route('pictures', function() {
     this.route('picture-create');
+    this.route('story-board-image-show');
   });
 });
 
