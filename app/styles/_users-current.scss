@@ -1,0 +1,18 @@
+.thumbnail-container {
+	@include span-columns(2);
+	padding-right: 50px;
+}
+
+.story-board-image {
+	list-style: none;
+}
+
+.story-board-image-title {
+
+	font-size: 25px;
+}
+
+.story-board-thumbnail {
+
+	height: 300px;
+}

@@ -1,7 +1,9 @@
 <li class="story-board-image">
-	{{#link-to 'blog.show' blog}}
-		<h1 class="blogTitle">{{model.image.filename}}</h1>
-	{{/link-to}}
-	<hr class="divider">
-	<p class="blogContent">{{model.image.url}}</p>
+	<div class="thumbnail-container">
+		{{#link-to 'blog.show' blog}}
+			<h1 class="story-board-image-title">{{image.filename}}</h1>
+		{{/link-to}}
+		<hr class="divider">
+		<img class="story-board-thumbnail" src='{{image.url}}'>
+	</div>
 </li>
