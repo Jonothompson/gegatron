@@ -1,0 +1,13 @@
+.footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #000000;
+  @include span-columns(12);
+  z-index: 999;
+  @include media(max-width 400px) {
+    color: $very-light-gray;
+  }
+}

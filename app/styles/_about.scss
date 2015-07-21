@@ -2,7 +2,6 @@
   @include span-columns(8);
   @include shift(2);
   padding-bottom: 78px;
-  // background-color: #303030;
   background-color: #fafafa;
   border-radius: 10px;
   @include media(max-width 400px) {
@@ -14,7 +13,6 @@
   .abouts {
     margin-top: 15px;
     padding: 10px 50px 10px 50px;
-    // background-color: #424242;
     background-color: #ffffff;
     border-radius: 10px;
     margin-bottom: 15px;

@@ -1,11 +1,8 @@
-//////blog show//////////
-
 .blogPostContainer {
   @include span-columns(8);
   @include shift(2);
   padding-bottom: 78px;
   padding-left: 48px;
-  // background-color: #303030;
   background-color: #fafafa;
   border-radius: 10px;
   @include media(max-width 400px) {
@@ -20,7 +17,6 @@
     margin-top: 15px;
     padding-right: 20px;
     padding-bottom: 10px;
-    // background-color: #424242;
     background-color: #ffffff;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -36,7 +32,6 @@
   .blogPostTitle {
     padding: 20px 10px 0px 10px;
     text-decoration: none;
-    // color: $very-light-gray;
     color: #000;
     @include media(max-width 400px) {
       padding: 5px 10px 0px 10px;

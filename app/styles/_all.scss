@@ -2,15 +2,14 @@
 html, body {
   background: none;
 }
+//
 
 body {
   padding-top: 78px;
   padding-bottom: 78px;
   font-family: $base-font-family;
   font-size: 20px;
-  // background-color: #212121;
   background-color: #f5f5f5;
-  // color: $very-light-gray;
   color: #000000;
   @include media(max-width 400px) {
     font-size: 10px;
@@ -49,20 +48,6 @@ body {
   border-radius: 10px;
 }
 
-.footer {
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: #000000;
-  @include span-columns(12);
-  z-index: 999;
-  @include media(max-width 400px) {
-    color: $very-light-gray;
-  }
-}
-
 .create-new-button {
   margin-right: 48px;
 }
@@ -75,7 +60,6 @@ a {
 .sumo-paint {
   @include span-columns(12);
   height: 1010;
-  // width="1854" height="1010"
 }
 
 .image-upload-form {
