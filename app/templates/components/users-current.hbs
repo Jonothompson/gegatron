@@ -1,11 +1,11 @@
 
 <h1>Hello {{model.name}}</h1>
 {{#if session.isAuthenticated}}
-	{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary' action='invalidateSession'}}Log Out{{/paper-button}}
+	{{#paper-button raised=true target=component type='submit' classNames='log-out-button md-primary' action='invalidateSession'}}Log Out{{/paper-button}}
 	{{#link-to 'sumo-paint'}}
-		{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary'}}Paint!{{/paper-button}}
+		{{#paper-button raised=true target=component type='submit' classNames='paint-button md-primary'}}Paint!{{/paper-button}}
 	{{/link-to}}
-	{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary' action='filePick'}}Upload Files{{/paper-button}}
+	{{#paper-button raised=true target=component type='submit' classNames='upload-button md-primary' action='filePick'}}Upload Files{{/paper-button}}
 {{/if}}
 
 {{yield}}

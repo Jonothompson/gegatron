@@ -5,6 +5,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
 	
 	model: function() {
 		return this.get ('session.currentUser');
+		return this.store.findAll('story-board-image');
 	},
 	
 	actions: {
