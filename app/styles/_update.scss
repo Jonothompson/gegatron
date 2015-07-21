@@ -1,0 +1,24 @@
+///////update pages/////////
+.title-update-form{
+  margin: 75px 0px 15px 0px;
+  @include span-columns(4);
+  @include shift(4);
+  height: 30px;
+}
+
+.body-update-form{
+  @include span-columns(4);
+  @include shift(4);
+  height: 500px;
+  margin-bottom: 15px;
+}
+
+.update-button {
+  @include span-columns(1);
+  @include shift(5);
+}
+
+.cancel-button {
+  @include span-columns(1);
+
+}
