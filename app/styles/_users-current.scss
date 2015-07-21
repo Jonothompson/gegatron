@@ -8,8 +8,10 @@
 }
 
 .story-board-image-title {
-
 	font-size: 25px;
+	height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .story-board-thumbnail {

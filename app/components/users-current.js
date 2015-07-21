@@ -6,6 +6,12 @@ export default Ember.Component.extend({
 			this.sendAction('action', this.get('model'));
 		},
 		
+    // filePick: function(){
+    //   filepicker.pick(function(blob){
+    //     this.sendAction('filePick', blob);
+    //   }.bind(this));
+    // }
+		
 		filePick: function() {
 			filepicker.pick(function(blob){
 				this.sendAction('filePick', {
@@ -13,8 +19,6 @@ export default Ember.Component.extend({
 					filename: blob.filename
 				});
 			}.bind(this));
-
 		}
-		
 	}
 });
