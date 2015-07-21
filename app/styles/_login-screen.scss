@@ -3,41 +3,71 @@
 
 }
 
+
 .landing-logo {
-  position: fixed; 
-  top: 100px; 
-  left: 450px; 
-  
+  @include span-columns(6);
+  @include shift(4);
   	
   /* Preserve aspet ratio */
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 35%;
+  max-height: 35%;
   @include flipInY(
   $duration: 2s,
   $delay: .5s,
   $function: ease, 
   $fill: both
   );
+  @include media(max-width 400px) {
+    @include span-columns(8);
+    @include shift(2);
+    max-width: 85%;
+    max-height: 85%;
+  }
+}
+
+.missionStatementLanding {
+  @include span-columns(6);
+  @include shift(3);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-content: center;
+  font-size: 80px;
+  color: black;
+  @include media(max-width 400px) {
+    @include span-columns(10);
+    @include shift(1);
+    font-size: 25px;
+    margin-left: 45px;
+  }
 }
 
 .login-button  {
-  @include span-columns(1.5);
-  @include shift(1);
-  margin-top: 450px;
-  height: 100px;
-  padding-top: 35px;
-  font-size: 40px;
+  @include span-columns(1);
+  @include shift(4);
+  height: 75px;
+  padding-top: 22px;
+  font-size: 35px;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  @include media(max-width 400px) {
+    @include shift(2);
+    padding-top: 5px;
+    height: 40px;
+    font-size: 20px;
+  }
 }
 
 .view-button {
-  @include span-columns(1.5);
-  @include shift(7);
-  margin-top: 450px;
-  height: 100px;
-  padding-top: 35px;
-  font-size: 40px;
+  @include span-columns(1);
+  @include shift(2);
+  height: 75px;
+  padding-top: 22px;
+  font-size: 35px;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  @include media(max-width 400px) {
+    padding-top: 5px;
+    height: 40px;
+    font-size: 20px;
+  }
 }
 
 .md-primary {
