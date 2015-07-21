@@ -4,8 +4,12 @@ import AuthenticatedRouteMixin from 'simple-auth/mixins/authenticated-route-mixi
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
 	
 	model: function() {
-		return this.get ('session.currentUser');
-		return this.store.findAll('story-board-image');
+		return Ember.RSVP.hash({
+			user: this.get('session.currentUser'),
+			image: this.store.findAll('story-board-image')
+		})
+		// return this.get ('session.currentUser');
+		// return this.store.findAll('story-board-image');
 	},
 	
 	actions: {
