@@ -1,5 +1,7 @@
 <ul class="Story-board">
-	{{#each model.image as |image|}}
-		{{story-board-image-preview image=image action='destroy'}}		
-	{{/each}}
+	{{#link-to story-board-image-show image}}
+		{{#each model.image as |image|}}
+			{{story-board-image-preview image=image action='destroy'}}		
+		{{/each}}
+	{{/link-to}}
 </ul>
