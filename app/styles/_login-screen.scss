@@ -6,11 +6,12 @@
 
 .landing-logo {
   @include span-columns(6);
-  @include shift(4);
+  @include shift(3.899);
   	
   /* Preserve aspet ratio */
   max-width: 35%;
   max-height: 35%;
+  text-align: center;
   @include flipInY(
   $duration: 2s,
   $delay: .5s,
@@ -30,7 +31,6 @@
   @include shift(3);
   margin-top: 50px;
   margin-bottom: 50px;
-
   text-align: center;
   font-size: 80px;
   color: black;
