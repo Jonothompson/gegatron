@@ -5,9 +5,21 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #000000;
+  color: $very-light-gray;
+  font-size: 12px;
   @include span-columns(12);
   z-index: 999;
   @include media(max-width 400px) {
     color: $very-light-gray;
+  }
+  
+  .copyright {
+    @include span-columns(2);
+    @include shift(2);
+    @include media(max-width 400px) {
+      @include span-columns(4);
+      @include shift(1);
+      font-size: 5px;
+    }
   }
 }
