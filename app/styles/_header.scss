@@ -80,7 +80,7 @@ site-navigation {
   color: $very-light-gray;
 	display: block;
 	float: left;
-	margin: 0 2px 0 0;
+	// margin: 0 2px 0 0;
 	padding: 0 12px 0 12px;
 	position: relative;
 	text-decoration: none;
@@ -95,6 +95,7 @@ site-navigation {
   color: $very-light-gray;
   text-decoration: none;
   display: block;
+  padding-left: 10px;
 }
 
 .site-navigation li:hover {
@@ -105,30 +106,37 @@ site-navigation {
 .site-navigation ul li ul {
 	visibility: hidden;
   background-color: #000000;
-  padding-left: 5px;
 	float: left;
 	position: absolute;
   transition: visibility 0.65s ease-in;
 	left: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .site-navigation ul li:hover > ul,
 .site-navigation ul li ul:hover {
    visibility: visible;
    background-color: #000000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .site-navigation ul li ul li {
 	clear: both;
   background-color: #000000;
 	padding: 5px 0 5px 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.site-navigation ul li ul li:hover {
-	background: #74b7e4;
+.site-navigation li a :hover {
+	color: #74b7e4;
+
 }
 .sub-menu {
   width: 150px;
+  font-size: 15px;
   @include media(max-width 400px) {
     width: 55px;
   }

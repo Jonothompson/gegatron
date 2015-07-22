@@ -7,6 +7,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
 		return Ember.RSVP.hash({
 			user: this.get('session.currentUser'),
 			image: this.store.findQuery('story-board-image', {
+				order: '-createdAt',
 				where: {
 					owner: {
 						__type: "Pointer",
