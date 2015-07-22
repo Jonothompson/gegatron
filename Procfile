@@ -1,1 +1,1 @@
-web: heroku-hhvm-apache2 backend/
+web: vendor/bin/heroku-php-apache2 backend/
