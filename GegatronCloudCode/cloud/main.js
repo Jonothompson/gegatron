@@ -13,6 +13,6 @@ Parse.Cloud.define("receiveSumoPaint", function(request, response) {
 
   // var parseFile = new Parse.File(name, file);
   // }
-  
+  console.log(request.headers);
   response.success("Hello world!");
 });
