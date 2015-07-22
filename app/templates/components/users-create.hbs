@@ -1,7 +1,7 @@
 <form {{action 'createUser' on='submit'}}>
-	{{paper-text label="Name" type='name' value=model.name classNames='userNameLogin'}}
-	{{paper-text label="E-mail" type='email' value=model.username classNames='userNameLogin'}}
-	{{paper-text label="Password" type="password" value=model.password classNames='passwordLogin'}}
+	{{paper-text label="Username" value=Username value=model.name classNames='user-Name-Login'}}
+	{{paper-text label="E-mail" type='email' value=model.username classNames='email-login'}}
+	{{paper-text label="Password" type="password" value=model.password classNames='password-Login'}}
 	{{#paper-button raised=true target=component type='submit' classNames='loginButton md-primary'}}Join{{/paper-button}}
 </form>
 {{yield}}
