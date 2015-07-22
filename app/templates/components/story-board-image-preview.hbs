@@ -1,7 +1,9 @@
 <li class="story-board-image">
-	<div class="thumbnail-container">
-		<h1 class="story-board-image-title">{{image.filename}}</h1>
-		<hr class="divider">
-		<img class="story-board-thumbnail" src='{{image.url}}'>
-	</div>
+	{{#link-to pictures.story-board-image-show image}}
+		<div class="thumbnail-container">
+			<h1 class="story-board-image-title">{{image.filename}}</h1>
+			<hr class="divider">
+			<img class="story-board-thumbnail" src='{{image.url}}'>
+		</div>
+	{{/link-to}}	
 </li>
