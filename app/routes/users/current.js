@@ -23,6 +23,10 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
 			this.get('session').invalidate();
 		},
 
+		destroy: function(image){
+			console.log(image);
+			image.destroyRecord();
+		},
 		
 		filePick: function(params) {
 			params.owner = this.get('session.currentUser');

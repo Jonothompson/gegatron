@@ -1,9 +1,10 @@
 <li class="story-board-image">
-	{{#link-to pictures.story-board-image-show image}}
 		<div class="thumbnail-container">
-			<h1 class="story-board-image-title">{{image.filename}}</h1>
-			<hr class="divider">
+			{{#link-to 'pictures.story-board-image-show' image}}
+				<h1 class="story-board-image-title">{{image.filename}}</h1>
+				<hr class="divider">
 			<img class="story-board-thumbnail" src='{{image.url}}'>
+			{{/link-to}}	
+			{{#paper-button raised=true target=component type='submit' classNames='md-primary image-board-delete' action='destroy'}}delete{{/paper-button}}
 		</div>
-	{{/link-to}}	
 </li>

@@ -1,0 +1,35 @@
+.full-image {
+	@include span-columns(10);
+	@include shift(1);
+	text-align: center;
+	background-color: #fafafa;
+	padding-bottom: 35px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+}
+
+.image-title {
+	@include span-columns(6);
+	@include shift(3);
+}
+
+.image-divider {
+	@include span-columns(8);
+	@include shift(2);
+}
+
+.story-board-image-show {
+	@include span-columns(10);
+	@include shift(1);
+	background-color: #ffffff;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+}
+
+.image-board-delete {
+	@include span-columns(1);
+	@include shift(3.5);
+}
