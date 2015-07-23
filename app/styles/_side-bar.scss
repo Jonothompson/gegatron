@@ -22,10 +22,11 @@
   h1.blogTitle {
     color: #000;
     text-decoration: none;
+    text-align: center;
     font-size: 20px;    
   }
   
   h1.blogTitle:hover{
-    color: $blue;
+    color: #3F51B5;
   }
 }
