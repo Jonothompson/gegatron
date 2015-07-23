@@ -18,6 +18,7 @@
 .image-divider {
 	@include span-columns(8);
 	@include shift(2);
+    border-bottom: 2px solid  #3F51B5;
 }
 
 .story-board-image-show {
