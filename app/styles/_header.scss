@@ -26,6 +26,11 @@
     color: $very-light-gray;
     text-decoration: none;
     @include span-columns(2);
+    @include media(max-width 1280px){
+      margin-top: 20px;
+      padding: 2px;
+      font-size: 15px;
+    }
     @include media(max-width 400px) {
       display: none;
     }
@@ -37,6 +42,10 @@
   
   .header-logout-button {
     margin-top: 15px;
+    @include media(max-width 1280px){
+      font-size: 15px;
+      margin-top: 5px;
+    }
     @include media(max-width 400px) {
       display: none;
     }
@@ -56,6 +65,12 @@ nav {
   align-content: center;
   @include span-columns(4);
   @include shift(2);
+  @include media(max-width 1280px) {
+    @include span-columns(6);
+    @include shift(1);
+    font-size: 15px;
+    margin-top: 5px;
+  }
   @include media(max-width 400px) {
       @include span-columns(8);
       @include shift(1);

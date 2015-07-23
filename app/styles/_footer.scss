@@ -16,6 +16,9 @@
   .copyright {
     @include span-columns(2);
     @include shift(2);
+    @include media(max-width 1280) {
+      @include span-columns(4);
+    }
     @include media(max-width 400px) {
       @include span-columns(4);
       @include shift(1);
