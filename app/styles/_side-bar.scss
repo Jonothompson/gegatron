@@ -1,7 +1,7 @@
 .sideBar {
   @include span-columns(2);
   padding: 15px;
-  @include media(max-width 400px) {
+  @include media(max-width 640px) {
     display: none;
   }
    

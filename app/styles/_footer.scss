@@ -9,7 +9,7 @@
   font-size: 12px;
   @include span-columns(12);
   z-index: 999;
-  @include media(max-width 400px) {
+  @include media(max-width 640px) {
     color: $very-light-gray;
   }
   
@@ -19,7 +19,7 @@
     @include media(max-width 1280) {
       @include span-columns(4);
     }
-    @include media(max-width 400px) {
+    @include media(max-width 640px) {
       @include span-columns(4);
       @include shift(1);
       font-size: 5px;

@@ -3,7 +3,7 @@
   padding-bottom: 78px;
   background-color: #fafafa;
   border-radius: 10px;
-  @include media(max-width 400px) {
+  @include media(max-width 640px) {
     @include span-columns(10);
     @include shift(1);
     padding-bottom: 42px;
@@ -12,7 +12,7 @@
   
   .blogPosts {
     list-style: none;
-    @include media(max-width 400px) {
+    @include media(max-width 640px) {
       padding: 1px 0px 1px 0px;
     }
   }
@@ -26,7 +26,7 @@
     margin-bottom: 15px;
     margin-right: 48px;
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
-    @include media(max-width 400px) {
+    @include media(max-width 640px) {
       padding: 1px 10px 1px 10px;
       margin: 0 10px 5px 10px;
       background-color: #ffffff;
@@ -56,7 +56,7 @@
     max-height: 165px;
     overflow: hidden;
     text-overflow: ellipsis;
-    @include media(max-width 400px) {
+    @include media(max-width 640px) {
       padding: 1px 10px 1px 10px;
       max-height: 100px;
     }
