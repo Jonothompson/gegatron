@@ -1,0 +1,21 @@
+.contactHeaderComment {
+	text-align: center;
+	font-size: 45px;
+}
+
+.contact-icons {
+}
+
+.fa-github-square {
+	@include shift(4.1)
+}
+
+.fa {
+
+	font-size: 100px;
+	margin-right: 25px;
+}
+
+.fa:hover{
+    color: #3F51B5;
+}
