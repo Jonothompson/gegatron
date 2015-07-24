@@ -3,19 +3,26 @@
 	font-size: 45px;
 }
 
-.contact-icons {
-}
-
 .fa-github-square {
-	@include shift(4.1)
+	@include shift(4.1);
 }
 
 .fa {
 
 	font-size: 100px;
 	margin-right: 25px;
+	@include media(max-width 400px) {
+	 	display: block;
+		 @include shift(4.1);
+	}
 }
 
 .fa:hover{
     color: #3F51B5;
+}
+
+.contactHeaderComment {
+	@include media(max-width 400px) {
+		font-size: 15px;
+	}
 }
