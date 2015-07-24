@@ -76,7 +76,7 @@ nav {
   }
   @include media(max-width 400px) {
       @include span-columns(8);
-      @include shift(1);
+      @include shift(0);
     }
 }
 
@@ -99,7 +99,6 @@ site-navigation {
   color: $very-light-gray;
 	display: block;
 	float: left;
-	// margin: 0 2px 0 0;
 	padding: 0 12px 0 12px;
 	position: relative;
 	text-decoration: none;
